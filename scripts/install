@@ -56,7 +56,7 @@ ynh_script_progression --message="Setting up source files..." --weight=1
 
 ynh_app_setting_set --app=$app --key=final_path --value=$final_path
 
-# Download, check integrity, uncompress and patch the source from app.src
+# Download, the source from sources folder
 mkdir -p $final_path && cp -a ../sources/* $final_path
 
 #=================================================
@@ -97,4 +97,4 @@ ynh_systemd_action --service_name=nginx --action=reload
 # END OF SCRIPT
 #=================================================
 
-ynh_script_progression --message="Installation of Converse.js completed" --last
+ynh_script_progression --message="Installation of Converse completed" --last

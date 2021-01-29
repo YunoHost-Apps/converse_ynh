@@ -3,14 +3,14 @@
     "id": "converse",
     "packaging_format": 1,
     "description": {
-        "en": "Web-based XMPP/Jabber chat client written in JavaScript ",
-        "fr": "Client de chat XMPP/Jabber basé sur le Web écrit en JavaScript "
+        "en": "Web-based XMPP/Jabber chat client written in JavaScript",
+        "fr": "Client de chat XMPP/Jabber basé sur le Web écrit en JavaScript"
     },
      "version": "7.0.4~ynh1",
     "url": "http://conversejs.org/",
     "license": "MPL-2.0",
     "maintainer": {
-        "name": "eric_G",
+        "name": "",
         "email": ""
     },
     "requirements": {

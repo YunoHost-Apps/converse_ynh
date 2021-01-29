@@ -3,7 +3,7 @@
 	; Manifest
 		domain="domain.tld"	(DOMAIN)
 		path="/path"	    (PATH)
-		is_public="Yes"	    (PUBLIC|public=Yes|private=No)
+		is_public=1	        (PUBLIC|public=1|private=0)
 	; Checks
 		pkg_linter=1
 		setup_sub_dir=1
@@ -16,4 +16,12 @@
 		multi_instance=1
 		port_already_use=0
 		change_url=1
+;;; Options
+Email=
+Notification=none
+;;; Upgrade options
+	; commit=CommitHash
+		name=Name and date of the commit.
+		manifest_arg=domain=DOMAIN&path=PATH&is_public=1&
+
 	
