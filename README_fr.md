@@ -21,6 +21,11 @@ Un client de chat XMPP gratuit et open-source dans votre navigateur .
 
 * [Démo officielle](https://inverse.chat/)
 
+## Documentation
+
+ * Documentation officielle : https://conversejs.org/docs/html/index.html
+ * Documentation YunoHost : Si une documentation spécifique est nécessaire, n'hésitez pas à contribuer.
+
 #### Architectures supportées
 
 * x86-64 - [![Build Status](https://ci-apps.yunohost.org/ci/logs/converse%20%28Apps%29.svg)](https://ci-apps.yunohost.org/ci/apps/converse/)
