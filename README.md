@@ -1,11 +1,11 @@
-# Converse for YunoHost
+# Converse.js for YunoHost
 
 [![Integration level](https://dash.yunohost.org/integration/converse.svg)](https://dash.yunohost.org/appci/app/converse) ![](https://ci-apps.yunohost.org/ci/badges/converse.status.svg) ![](https://ci-apps.yunohost.org/ci/badges/converse.maintain.svg)  
-[![Install Converse with YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=converse)
+[![Install Converse.js with YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=converse)
 
 *[Lire ce readme en français.](./README_fr.md)*
 
-> *This package allow you to install Converse quickly and simply on a YunoHost server. 
+> *This package allow you to install Converse.js quickly and simply on a YunoHost server. 
 If you don’t have YunoHost, please see [here](https://yunohost.org/#/install) to know how to install and enjoy it.*
 
 ## Overview
