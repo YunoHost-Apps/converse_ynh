@@ -63,7 +63,7 @@ then
 	ynh_secure_remove --file="$final_path"
 
 	# Download, the source from sources folder
-	cp -a ../sources/* $final_path
+	mkdir -p $final_path && cp -a ../sources/* $final_path
 	ynh_replace_string --match_string="__DOMAIN____PATH__" --replace_string="$domain$path_url" --target_file="$final_path/index.html"
 fi
 
