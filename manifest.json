@@ -6,7 +6,7 @@
         "en": "Web-based XMPP/Jabber chat client written in JavaScript",
         "fr": "Client de chat XMPP/Jabber basé sur le Web écrit en JavaScript"
     },
-     "version": "7.0.4~ynh1",
+     "version": "7.0.4~ynh2",
     "url": "http://conversejs.org/",
     "license": "MPL-2.0",
     "maintainer": {
