@@ -29,8 +29,8 @@ The benefit of using converse.js as opposed to relying on a SaaS (software-as-a-
 
 #### Supported architectures
 
-* x86-64 - [![Build Status](https://ci-apps.yunohost.org/ci/logs/converse%20%28Apps%29.svg)](https://ci-apps.yunohost.org/ci/apps/converse/)
-* ARMv8-A - [![Build Status](https://ci-apps-arm.yunohost.org/ci/logs/converse%20%28Apps%29.svg)](https://ci-apps-arm.yunohost.org/ci/apps/converse/)
+* x86-64 - [![Build Status](https://ci-apps.yunohost.org/ci/logs/converse.svg)](https://ci-apps.yunohost.org/ci/apps/converse/)
+* ARMv8-A - [![Build Status](https://ci-apps-arm.yunohost.org/ci/logs/converse.svg)](https://ci-apps-arm.yunohost.org/ci/apps/converse/)
 
 ## Links
 
