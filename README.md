@@ -12,7 +12,7 @@ If you don’t have YunoHost, please see [here](https://yunohost.org/#/install) 
 Converse is a free and open-source XMPP chat client written in JavaScript which can be tightly integrated into any website.
 The benefit of using converse.js as opposed to relying on a SaaS (software-as-a-service) solution, is that your users can have a much more customized, streamlined and integrated webchat experience and that you have control over the data.
 
-**Shipped version:** 7.0.4
+**Shipped version:** 7.0.5
 
 ## Screenshots
 
