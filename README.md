@@ -17,7 +17,7 @@ If you don't have YunoHost, please consult [the guide](https://yunohost.org/#/in
 
 Web-based XMPP/Jabber chat client
 
-**Shipped version:** 7.0.5~ynh1
+**Shipped version:** 7.0.6~ynh1
 
 **Demo:** https://inverse.chat/
 

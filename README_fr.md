@@ -13,7 +13,7 @@ Si vous n'avez pas YunoHost, regardez [ici](https://yunohost.org/#/install) pour
 
 Client de chat XMPP/Jabber basé sur le Web
 
-**Version incluse :** 7.0.5~ynh1
+**Version incluse :** 7.0.6~ynh1
 
 **Démo :** https://inverse.chat/
 
