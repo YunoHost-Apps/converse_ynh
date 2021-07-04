@@ -18,7 +18,7 @@ ynh_abort_if_errors
 #=================================================
 # LOAD SETTINGS
 #=================================================
-ynh_print_info --message="Backing up Converse..."
+ynh_print_info --message="Loading installation settings..."
 
 app=$YNH_APP_INSTANCE_NAME
 
@@ -46,4 +46,4 @@ ynh_backup --src_path="/etc/nginx/conf.d/$domain.d/$app.conf"
 # END OF SCRIPT
 #=================================================
 
-ynh_print_info --message="Backup script completed for Converse. (YunoHost will then actually copy those files to the archive)."
+ynh_print_info --message="Backup script completed for $app. (YunoHost will then actually copy those files to the archive)."

@@ -6,15 +6,22 @@
         "en": "Web-based XMPP/Jabber chat client",
         "fr": "Client de chat XMPP/Jabber basé sur le Web"
     },
-     "version": "7.0.4~ynh4",
+     "version": "7.0.6~ynh1",
     "url": "http://conversejs.org/",
+    "upstream": {
+        "license": "MPL-2.0",
+        "website": "http://conversejs.org",
+        "demo": "https://inverse.chat/",
+        "admindoc": "https://conversejs.org/docs/html/index.html",
+        "code": "https://github.com/conversejs/converse.js"
+    },
     "license": "MPL-2.0",
     "maintainer": {
         "name": "eric_G",
         "email": ""
     },
     "requirements": {
-        "yunohost": ">= 4.1.7"
+        "yunohost": ">= 4.2.4"
     },
     "multi_instance": true,
     "services": [
