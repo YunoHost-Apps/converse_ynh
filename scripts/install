@@ -65,9 +65,7 @@ ynh_app_setting_set --app=$app --key=final_path --value=$final_path
 
 # Download, the source from sources folder
 mkdir -p $final_path && cp -a ../sources/* $final_path
-
-ynh_replace_string --match_string="__PATH__" --replace_string="$path_url" --target_file="$final_path/index.html"
-ynh_replace_string --match_string="__DOMAIN__" --replace_string="$domain" --target_file="$final_path/index.html"
+ynh_add_config --template="../sources/index.html" --destination="$final_path/index.html"
 
 chmod 750 "$final_path"
 chmod -R o-rwx "$final_path"
