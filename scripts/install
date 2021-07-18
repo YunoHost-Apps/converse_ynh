@@ -23,6 +23,7 @@ ynh_abort_if_errors
 domain=$YNH_APP_ARG_DOMAIN
 path_url=$YNH_APP_ARG_PATH
 is_public=$YNH_APP_ARG_IS_PUBLIC
+maindomain=$(yunohost domain main-domain --output-as plain)
 
 app=$YNH_APP_INSTANCE_NAME
 
@@ -45,6 +46,7 @@ ynh_script_progression --message="Storing installation settings..." --weight=2
 
 ynh_app_setting_set --app=$app --key=domain --value=$domain
 ynh_app_setting_set --app=$app --key=path --value=$path_url
+ynh_app_setting_set --app=$app --key=maindomain --value=$maindomain
 
 #=================================================
 # CREATE DEDICATED USER
@@ -65,9 +67,7 @@ ynh_app_setting_set --app=$app --key=final_path --value=$final_path
 
 # Download, the source from sources folder
 mkdir -p $final_path && cp -a ../sources/* $final_path
-
-ynh_replace_string --match_string="__PATH__" --replace_string="$path_url" --target_file="$final_path/index.html"
-ynh_replace_string --match_string="__DOMAIN__" --replace_string="$domain" --target_file="$final_path/index.html"
+ynh_add_config --template="../sources/index.html" --destination="$final_path/index.html"
 
 chmod 750 "$final_path"
 chmod -R o-rwx "$final_path"
