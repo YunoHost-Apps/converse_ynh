@@ -6,7 +6,7 @@
         "en": "Web-based XMPP/Jabber chat client",
         "fr": "Client de chat XMPP/Jabber basé sur le Web"
     },
-     "version": "7.0.6~ynh2",
+     "version": "9.0.0~ynh1",
     "url": "http://conversejs.org/",
     "upstream": {
         "license": "MPL-2.0",
@@ -21,7 +21,7 @@
         "email": ""
     },
     "requirements": {
-        "yunohost": ">= 4.2.4"
+        "yunohost": ">= 4.3.0"
     },
     "multi_instance": true,
     "services": [
@@ -31,8 +31,7 @@
         "install" : [
             {
                 "name": "domain",
-                "type": "domain",
-                "example": "domain.org"
+                "type": "domain"
             },
             {
                 "name": "path",
