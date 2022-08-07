@@ -6,14 +6,15 @@
         "en": "Web-based XMPP/Jabber chat client",
         "fr": "Client de chat XMPP/Jabber basé sur le Web"
     },
-     "version": "9.1.1~ynh1",
+    "version": "9.1.1~ynh1",
     "url": "http://conversejs.org/",
     "upstream": {
         "license": "MPL-2.0",
         "website": "http://conversejs.org",
         "demo": "https://inverse.chat/",
         "admindoc": "https://conversejs.org/docs/html/index.html",
-        "code": "https://github.com/conversejs/converse.js"
+        "code": "https://github.com/conversejs/converse.js",
+        "cpe": "cpe:2.3:a:conversejs:converse.js"
     },
     "license": "MPL-2.0",
     "maintainer": {
@@ -28,7 +29,7 @@
         "nginx"
     ],
     "arguments": {
-        "install" : [
+        "install": [
             {
                 "name": "domain",
                 "type": "domain"
@@ -43,8 +44,8 @@
                 "name": "is_public",
                 "type": "boolean",
                 "help": {
-                        "en": "If enabled, Converse will be accessible by people who doesn’t have an account. This can be changed later via the webadmin.",
-                        "fr": "Si cette case est cochée, Converse sera accessible aux personnes n’ayant pas de compte. Vous pourrez changer ceci plus tard via la webadmin."
+                    "en": "If enabled, Converse will be accessible by people who doesn’t have an account. This can be changed later via the webadmin.",
+                    "fr": "Si cette case est cochée, Converse sera accessible aux personnes n’ayant pas de compte. Vous pourrez changer ceci plus tard via la webadmin."
                 },
                 "default": true
             }
