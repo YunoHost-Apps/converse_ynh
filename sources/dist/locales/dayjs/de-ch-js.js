@@ -1,10 +1,10 @@
 (self["webpackChunkconverse_js"] = self["webpackChunkconverse_js"] || []).push([[1679],{
 
-/***/ 5151:
+/***/ 8630:
 /***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 !function (e, n) {
-   true ? module.exports = n(__webpack_require__(8570)) : 0;
+   true ? module.exports = n(__webpack_require__(7076)) : 0;
 }(this, function (e) {
   "use strict";
 
@@ -13,27 +13,24 @@
       default: e
     };
   }
-
   var t = n(e),
-      a = {
-    s: "ein paar Sekunden",
-    m: ["eine Minute", "einer Minute"],
-    mm: "%d Minuten",
-    h: ["eine Stunde", "einer Stunde"],
-    hh: "%d Stunden",
-    d: ["ein Tag", "einem Tag"],
-    dd: ["%d Tage", "%d Tagen"],
-    M: ["ein Monat", "einem Monat"],
-    MM: ["%d Monate", "%d Monaten"],
-    y: ["ein Jahr", "einem Jahr"],
-    yy: ["%d Jahre", "%d Jahren"]
-  };
-
+    a = {
+      s: "ein paar Sekunden",
+      m: ["eine Minute", "einer Minute"],
+      mm: "%d Minuten",
+      h: ["eine Stunde", "einer Stunde"],
+      hh: "%d Stunden",
+      d: ["ein Tag", "einem Tag"],
+      dd: ["%d Tage", "%d Tagen"],
+      M: ["ein Monat", "einem Monat"],
+      MM: ["%d Monate", "%d Monaten"],
+      y: ["ein Jahr", "einem Jahr"],
+      yy: ["%d Jahre", "%d Jahren"]
+    };
   function i(e, n, t) {
     var i = a[t];
     return Array.isArray(i) && (i = i[n ? 0 : 1]), i.replace("%d", e);
   }
-
   var r = {
     name: "de-ch",
     weekdays: "Sonntag_Montag_Dienstag_Mittwoch_Donnerstag_Freitag_Samstag".split("_"),

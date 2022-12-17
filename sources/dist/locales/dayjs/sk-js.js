@@ -1,10 +1,10 @@
 (self["webpackChunkconverse_js"] = self["webpackChunkconverse_js"] || []).push([[6783],{
 
-/***/ 3727:
+/***/ 8777:
 /***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 !function (e, t) {
-   true ? module.exports = t(__webpack_require__(8570)) : 0;
+   true ? module.exports = t(__webpack_require__(7076)) : 0;
 }(this, function (e) {
   "use strict";
 
@@ -13,52 +13,37 @@
       default: e
     };
   }
-
   var n = t(e);
-
   function r(e) {
     return e > 1 && e < 5 && 1 != ~~(e / 10);
   }
-
   function o(e, t, n, o) {
     var a = e + " ";
-
     switch (n) {
       case "s":
         return t || o ? "pár sekúnd" : "pár sekundami";
-
       case "m":
         return t ? "minúta" : o ? "minútu" : "minútou";
-
       case "mm":
         return t || o ? a + (r(e) ? "minúty" : "minút") : a + "minútami";
-
       case "h":
         return t ? "hodina" : o ? "hodinu" : "hodinou";
-
       case "hh":
         return t || o ? a + (r(e) ? "hodiny" : "hodín") : a + "hodinami";
-
       case "d":
         return t || o ? "deň" : "dňom";
-
       case "dd":
         return t || o ? a + (r(e) ? "dni" : "dní") : a + "dňami";
-
       case "M":
         return t || o ? "mesiac" : "mesiacom";
-
       case "MM":
         return t || o ? a + (r(e) ? "mesiace" : "mesiacov") : a + "mesiacmi";
-
       case "y":
         return t || o ? "rok" : "rokom";
-
       case "yy":
         return t || o ? a + (r(e) ? "roky" : "rokov") : a + "rokmi";
     }
   }
-
   var a = {
     name: "sk",
     weekdays: "nedeľa_pondelok_utorok_streda_štvrtok_piatok_sobota".split("_"),

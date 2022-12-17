@@ -1,10 +1,10 @@
 (self["webpackChunkconverse_js"] = self["webpackChunkconverse_js"] || []).push([[1194],{
 
-/***/ 9099:
+/***/ 2552:
 /***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 !function (u, r) {
-   true ? module.exports = r(__webpack_require__(8570)) : 0;
+   true ? module.exports = r(__webpack_require__(7076)) : 0;
 }(this, function (u) {
   "use strict";
 
@@ -13,33 +13,29 @@
       default: u
     };
   }
-
   var n = r(u),
-      e = {
-    s: ["nokkrar sekúndur", "nokkrar sekúndur", "nokkrum sekúndum"],
-    m: ["mínúta", "mínútu", "mínútu"],
-    mm: ["mínútur", "mínútur", "mínútum"],
-    h: ["klukkustund", "klukkustund", "klukkustund"],
-    hh: ["klukkustundir", "klukkustundir", "klukkustundum"],
-    d: ["dagur", "dag", "degi"],
-    dd: ["dagar", "daga", "dögum"],
-    M: ["mánuður", "mánuð", "mánuði"],
-    MM: ["mánuðir", "mánuði", "mánuðum"],
-    y: ["ár", "ár", "ári"],
-    yy: ["ár", "ár", "árum"]
-  };
-
+    e = {
+      s: ["nokkrar sekúndur", "nokkrar sekúndur", "nokkrum sekúndum"],
+      m: ["mínúta", "mínútu", "mínútu"],
+      mm: ["mínútur", "mínútur", "mínútum"],
+      h: ["klukkustund", "klukkustund", "klukkustund"],
+      hh: ["klukkustundir", "klukkustundir", "klukkustundum"],
+      d: ["dagur", "dag", "degi"],
+      dd: ["dagar", "daga", "dögum"],
+      M: ["mánuður", "mánuð", "mánuði"],
+      MM: ["mánuðir", "mánuði", "mánuðum"],
+      y: ["ár", "ár", "ári"],
+      yy: ["ár", "ár", "árum"]
+    };
   function t(u, r, n, t) {
     var a = function (u, r, n, t) {
       var a = t ? 0 : n ? 1 : 2,
-          d = 2 === u.length && r % 10 == 1 ? u[0] : u,
-          m = e[d][a];
+        d = 2 === u.length && r % 10 == 1 ? u[0] : u,
+        m = e[d][a];
       return 1 === u.length ? m : "%d " + m;
     }(n, u, t, r);
-
     return a.replace("%d", u);
   }
-
   var a = {
     name: "is",
     weekdays: "sunnudagur_mánudagur_þriðjudagur_miðvikudagur_fimmtudagur_föstudagur_laugardagur".split("_"),

@@ -1,10 +1,10 @@
 (self["webpackChunkconverse_js"] = self["webpackChunkconverse_js"] || []).push([[4153],{
 
-/***/ 4533:
+/***/ 4419:
 /***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 !function (e, a) {
-   true ? module.exports = a(__webpack_require__(8570)) : 0;
+   true ? module.exports = a(__webpack_require__(7076)) : 0;
 }(this, function (e) {
   "use strict";
 
@@ -13,9 +13,7 @@
       default: e
     };
   }
-
   var t = a(e);
-
   function u(e, a, t, u) {
     var s = {
       s: ["mõne sekundi", "mõni sekund", "paar sekundit"],
@@ -31,7 +29,6 @@
     };
     return a ? (s[t][2] ? s[t][2] : s[t][1]).replace("%d", e) : (u ? s[t][0] : s[t][1]).replace("%d", e);
   }
-
   var s = {
     name: "et",
     weekdays: "pühapäev_esmaspäev_teisipäev_kolmapäev_neljapäev_reede_laupäev".split("_"),

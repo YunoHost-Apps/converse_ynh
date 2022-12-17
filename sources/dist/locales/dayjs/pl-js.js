@@ -1,10 +1,10 @@
 (self["webpackChunkconverse_js"] = self["webpackChunkconverse_js"] || []).push([[1211],{
 
-/***/ 545:
+/***/ 6262:
 /***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 !function (e, t) {
-   true ? module.exports = t(__webpack_require__(8570)) : 0;
+   true ? module.exports = t(__webpack_require__(7076)) : 0;
 }(this, function (e) {
   "use strict";
 
@@ -13,44 +13,33 @@
       default: e
     };
   }
-
   var i = t(e);
-
   function a(e) {
     return e % 10 < 5 && e % 10 > 1 && ~~(e / 10) % 10 != 1;
   }
-
   function n(e, t, i) {
     var n = e + " ";
-
     switch (i) {
       case "m":
         return t ? "minuta" : "minutę";
-
       case "mm":
         return n + (a(e) ? "minuty" : "minut");
-
       case "h":
         return t ? "godzina" : "godzinę";
-
       case "hh":
         return n + (a(e) ? "godziny" : "godzin");
-
       case "MM":
         return n + (a(e) ? "miesiące" : "miesięcy");
-
       case "yy":
         return n + (a(e) ? "lata" : "lat");
     }
   }
-
   var r = "stycznia_lutego_marca_kwietnia_maja_czerwca_lipca_sierpnia_września_października_listopada_grudnia".split("_"),
-      _ = "styczeń_luty_marzec_kwiecień_maj_czerwiec_lipiec_sierpień_wrzesień_październik_listopad_grudzień".split("_"),
-      s = /D MMMM/,
-      d = function (e, t) {
-    return s.test(t) ? r[e.month()] : _[e.month()];
-  };
-
+    _ = "styczeń_luty_marzec_kwiecień_maj_czerwiec_lipiec_sierpień_wrzesień_październik_listopad_grudzień".split("_"),
+    s = /D MMMM/,
+    d = function (e, t) {
+      return s.test(t) ? r[e.month()] : _[e.month()];
+    };
   d.s = _, d.f = r;
   var o = {
     name: "pl",

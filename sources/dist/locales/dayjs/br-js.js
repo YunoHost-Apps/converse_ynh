@@ -1,10 +1,10 @@
 (self["webpackChunkconverse_js"] = self["webpackChunkconverse_js"] || []).push([[760],{
 
-/***/ 2766:
+/***/ 9802:
 /***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 !function (e, n) {
-   true ? module.exports = n(__webpack_require__(8570)) : 0;
+   true ? module.exports = n(__webpack_require__(7076)) : 0;
 }(this, function (e) {
   "use strict";
 
@@ -13,13 +13,10 @@
       default: e
     };
   }
-
   var u = n(e);
-
   function r(e) {
     return e > 9 ? r(e % 10) : e;
   }
-
   function t(e, n, u) {
     return e + " " + function (e, n) {
       return 2 === n ? function (e) {
@@ -35,7 +32,6 @@
       dd: "devezh"
     }[u], e);
   }
-
   var o = {
     name: "br",
     weekdays: "Sul_Lun_Meurzh_Mercʼher_Yaou_Gwener_Sadorn".split("_"),
@@ -76,7 +72,6 @@
           case 5:
           case 9:
             return e + " bloaz";
-
           default:
             return e + " vloaz";
         }
