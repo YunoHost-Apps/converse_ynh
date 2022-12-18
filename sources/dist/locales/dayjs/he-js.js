@@ -1,10 +1,10 @@
 (self["webpackChunkconverse_js"] = self["webpackChunkconverse_js"] || []).push([[9372],{
 
-/***/ 6626:
+/***/ 4092:
 /***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 !function (Y, M) {
-   true ? module.exports = M(__webpack_require__(8570)) : 0;
+   true ? module.exports = M(__webpack_require__(7076)) : 0;
 }(this, function (Y) {
   "use strict";
 
@@ -13,31 +13,28 @@
       default: Y
     };
   }
-
   var d = M(Y),
-      e = {
-    s: "מספר שניות",
-    ss: "%d שניות",
-    m: "דקה",
-    mm: "%d דקות",
-    h: "שעה",
-    hh: "%d שעות",
-    hh2: "שעתיים",
-    d: "יום",
-    dd: "%d ימים",
-    dd2: "יומיים",
-    M: "חודש",
-    MM: "%d חודשים",
-    MM2: "חודשיים",
-    y: "שנה",
-    yy: "%d שנים",
-    yy2: "שנתיים"
-  };
-
+    e = {
+      s: "מספר שניות",
+      ss: "%d שניות",
+      m: "דקה",
+      mm: "%d דקות",
+      h: "שעה",
+      hh: "%d שעות",
+      hh2: "שעתיים",
+      d: "יום",
+      dd: "%d ימים",
+      dd2: "יומיים",
+      M: "חודש",
+      MM: "%d חודשים",
+      MM2: "חודשיים",
+      y: "שנה",
+      yy: "%d שנים",
+      yy2: "שנתיים"
+    };
   function _(Y, M, d) {
     return (e[d + (2 === Y ? "2" : "")] || e[d]).replace("%d", Y);
   }
-
   var l = {
     name: "he",
     weekdays: "ראשון_שני_שלישי_רביעי_חמישי_שישי_שבת".split("_"),
