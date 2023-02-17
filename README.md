@@ -32,7 +32,7 @@ The benefit of using converse.js as opposed to relying on a SaaS (software-as-a-
 
 
 
-**Shipped version:** 10.1.2~ynh1
+**Shipped version:** 10.1.2~ynh2
 
 **Demo:** https://inverse.chat/
 ## Documentation and resources
