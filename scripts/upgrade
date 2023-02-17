@@ -19,7 +19,6 @@ upgrade_type=$(ynh_check_app_version_changed)
 #=================================================
 ynh_script_progression --message="Ensuring downward compatibility..." --weight=1
 
-
 # If maindomain doesn't exist, create it
 if [ -z "${maindomain:-}" ]; then
 	maindomain=$(yunohost domain main-domain --output-as plain)
@@ -42,8 +41,6 @@ then
 	ynh_add_config --template="../sources/index.html" --destination="$install_dir/index.html"
 fi
 
-chmod 750 "$install_dir"
-chmod -R o-rwx "$install_dir"
 chown -R $app:www-data "$install_dir"
 
 #=================================================

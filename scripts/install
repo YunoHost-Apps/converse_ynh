@@ -18,7 +18,6 @@ maindomain=$(yunohost domain main-domain --output-as plain)
 #=================================================
 # STORE SETTINGS FROM MANIFEST
 #=================================================
-ynh_script_progression --message="Storing installation settings..." --weight=2
 
 ynh_app_setting_set --app=$app --key=maindomain --value=$maindomain
 
@@ -33,8 +32,6 @@ ynh_script_progression --message="Setting up source files..." --weight=1
 mkdir -p $install_dir && cp -a ../sources/* $install_dir
 ynh_add_config --template="../sources/index.html" --destination="$install_dir/index.html"
 
-chmod 750 "$install_dir"
-chmod -R o-rwx "$install_dir"
 chown -R $app:www-data "$install_dir"
 
 #=================================================
