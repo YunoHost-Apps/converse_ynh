@@ -17,7 +17,7 @@ admindoc = "https://conversejs.org/docs/html/index.html"
 code = "https://github.com/conversejs/converse.js"
 
 [integration]
-yunohost = ">= 11.1.13"
+yunohost = ">= 11.1.15"
 architectures = "all"
 multi_instance = true
 ldap = false
