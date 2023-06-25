@@ -50,6 +50,10 @@
         MM: "%d 個月",
         y: "1 年",
         yy: "%d 年"
+      },
+      meridiem: function (_, e) {
+        var t = 100 * _ + e;
+        return t < 600 ? "凌晨" : t < 900 ? "早上" : t < 1100 ? "上午" : t < 1300 ? "中午" : t < 1800 ? "下午" : "晚上";
       }
     };
   return t.default.locale(d, null, !0), d;

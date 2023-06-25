@@ -1,6 +1,6 @@
 (self["webpackChunkconverse_js"] = self["webpackChunkconverse_js"] || []).push([[3411],{
 
-/***/ 6472:
+/***/ 2791:
 /***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 !function (e, o) {
