@@ -38,7 +38,7 @@ The benefit of using converse.js as opposed to relying on a SaaS (software-as-a-
 * Site officiel de l’app : <http://conversejs.org>
 * Documentation officielle de l’admin : <https://conversejs.org/docs/html/index.html>
 * Dépôt de code officiel de l’app : <https://github.com/conversejs/converse.js>
-* Documentation YunoHost pour cette app : <https://yunohost.org/app_converse>
+* YunoHost Store: <https://apps.yunohost.org/app/converse>
 * Signaler un bug : <https://github.com/YunoHost-Apps/converse_ynh/issues>
 
 ## Informations pour les développeurs
