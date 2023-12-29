@@ -5,7 +5,7 @@ name = "Converse"
 description.en = "Web-based XMPP/Jabber chat client"
 description.fr = "Client de chat XMPP/Jabber basé sur le Web"
 
-version = "10.1.4~ynh1"
+version = "10.1.6~ynh1"
 
 maintainers = ["eric_G"]
 
