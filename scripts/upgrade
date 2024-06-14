@@ -24,12 +24,10 @@ fi
 #=================================================
 ynh_script_progression --message="Upgrading source files..." --weight=4
 
-# Remove the app directory securely
-ynh_secure_remove --file="$install_dir"
+# Download, check integrity, uncompress and patch the source from manifest.toml
+ynh_setup_source --dest_dir="$install_dir" --full_replace=1
 
-# Download, the source from sources folder
-mkdir -p $install_dir && cp -a ../sources/* $install_dir
-ynh_add_config --template="../sources/index.html" --destination="$install_dir/index.html"
+ynh_add_config --template="../sources/index.html" --destination="$install_dir/dist/index.html"
 
 chown -R $app:www-data "$install_dir"
 
