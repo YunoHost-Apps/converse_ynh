@@ -5,9 +5,9 @@ name = "Converse"
 description.en = "Web-based XMPP/Jabber chat client"
 description.fr = "Client de chat XMPP/Jabber basé sur le Web"
 
-version = "10.1.4~ynh1"
+version = "10.1.6~ynh1"
 
-maintainers = ["eric_G"]
+maintainers = []
 
 [upstream]
 license = "MPL-2.0"
@@ -17,11 +17,14 @@ admindoc = "https://conversejs.org/docs/html/index.html"
 code = "https://github.com/conversejs/converse.js"
 
 [integration]
-yunohost = ">= 11.1.21"
+yunohost = ">= 11.2"
 architectures = "all"
 multi_instance = true
+
 ldap = false
+
 sso = false
+
 disk = "50M"
 ram.build = "50M"
 ram.runtime = "50M"
