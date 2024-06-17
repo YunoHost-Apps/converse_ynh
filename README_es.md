@@ -30,7 +30,7 @@ The benefit of using converse.js as opposed to relying on a SaaS (software-as-a-
 - Passwordless login with client certificates
 
 
-**Versión actual:** 10.1.7~ynh1
+**Versión actual:** 10.1.7~ynh2
 
 **Demo:** <https://inverse.chat/>
 ## Documentaciones y recursos
