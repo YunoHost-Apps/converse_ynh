@@ -28,7 +28,7 @@ ynh_script_progression --message="Upgrading source files..." --weight=4
 ynh_setup_source --dest_dir="$install_dir" --full_replace=1
 
 ynh_add_config --template="../sources/index.html" --destination="$install_dir/index.html"
-
+ynh_add_config --template="libsignal-protocol.min.js" --destination="$install_dir/dist/libsignal-protocol.min.js"
 chown -R $app:www-data "$install_dir"
 
 #=================================================
