@@ -15,24 +15,20 @@ source /usr/share/yunohost/helpers
 
 maindomain=$(yunohost domain main-domain --output-as plain)
 
-#=================================================
-# STORE SETTINGS FROM MANIFEST
-#=================================================
-
 ynh_app_setting_set --app=$app --key=maindomain --value=$maindomain
 
-#=================================================
-# STANDARD MODIFICATIONS
 #=================================================
 # DOWNLOAD, CHECK AND UNPACK SOURCE
 #=================================================
 ynh_script_progression --message="Setting up source files..." --weight=1
 
-# Download, the source from sources folder
-mkdir -p $install_dir && cp -a ../sources/* $install_dir
-ynh_add_config --template="../sources/index.html" --destination="$install_dir/index.html"
+# Download, check integrity, uncompress and patch the source from manifest.toml
+ynh_setup_source --dest_dir="$install_dir"
 
-chown -R $app:www-data "$install_dir"
+ynh_add_config --template="../sources/index.html" --destination="$install_dir/index.html"
+cp "../sources/libsignal-protocol.min.js" "$install_dir/dist/libsignal-protocol.min.js"
+
+chown -R "$app:www-data" "$install_dir"
 
 #=================================================
 # NGINX CONFIGURATION
