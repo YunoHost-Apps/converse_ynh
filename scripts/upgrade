@@ -1,47 +1,41 @@
 #!/bin/bash
 
-#=================================================
-# GENERIC START
-#=================================================
-# IMPORT GENERIC HELPERS
-#=================================================
-
 source /usr/share/yunohost/helpers
 
 #=================================================
 # ENSURE DOWNWARD COMPATIBILITY
 #=================================================
-ynh_script_progression --message="Ensuring downward compatibility..." --weight=1
+ynh_script_progression "Ensuring downward compatibility..."
 
 # If maindomain doesn't exist, create it
+# FIXMEhelpers2.1: maybe replace with: ynh_app_setting_set_default --key=maindomain --value=$(yunohost domain main-domain --output-as plain)
 if [ -z "${maindomain:-}" ]; then
 	maindomain=$(yunohost domain main-domain --output-as plain)
-	ynh_app_setting_set --app=$app --key=maindomain --value=$maindomain
+	ynh_app_setting_set --key=maindomain --value=$maindomain
 fi
 
 #=================================================
 # DOWNLOAD, CHECK AND UNPACK SOURCE
 #=================================================
-ynh_script_progression --message="Upgrading source files..." --weight=4
+ynh_script_progression "Upgrading source files..."
 
 # Download, check integrity, uncompress and patch the source from manifest.toml
-ynh_setup_source --dest_dir="$install_dir" --full_replace=1
+ynh_setup_source --dest_dir="$install_dir" --full_replace
 
-ynh_add_config --template="../sources/index.html" --destination="$install_dir/index.html"
+ynh_config_add --template="../sources/index.html" --destination="$install_dir/index.html"
 cp "../sources/libsignal-protocol.min.js" "$install_dir/dist/libsignal-protocol.min.js"
 
-chown -R $app:www-data "$install_dir"
-
+#REMOVEME? Assuming the install dir is setup using ynh_setup_source, the proper chmod/chowns are now already applied and it shouldn't be necessary to tweak perms | chown -R $app:www-data "$install_dir"
 #=================================================
 # NGINX CONFIGURATION
 #=================================================
-ynh_script_progression --message="Upgrading NGINX web server configuration..." --weight=2
+ynh_script_progression "Upgrading NGINX web server configuration..."
 
 # Create a dedicated NGINX config
-ynh_add_nginx_config
+ynh_config_add_nginx
 
 #=================================================
 # END OF SCRIPT
 #=================================================
 
-ynh_script_progression --message="Upgrade of $app completed" --last
+ynh_script_progression "Upgrade of $app completed"
