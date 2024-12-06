@@ -2,9 +2,6 @@
 
 source /usr/share/yunohost/helpers
 
-# Stop script if errors
-#REMOVEME? ynh_abort_if_errors
-
 #=================================================
 # MODIFY URL IN NGINX CONF
 #=================================================

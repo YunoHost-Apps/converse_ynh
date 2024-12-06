@@ -8,30 +8,23 @@ source /usr/share/yunohost/helpers
 ynh_script_progression "Ensuring downward compatibility..."
 
 # If maindomain doesn't exist, create it
-# FIXMEhelpers2.1: maybe replace with: ynh_app_setting_set_default --key=maindomain --value=$(yunohost domain main-domain --output-as plain)
-if [ -z "${maindomain:-}" ]; then
-	maindomain=$(yunohost domain main-domain --output-as plain)
-	ynh_app_setting_set --key=maindomain --value=$maindomain
-fi
+ynh_app_setting_set_default --key=maindomain --value=$(yunohost domain main-domain --output-as plain)
 
 #=================================================
 # DOWNLOAD, CHECK AND UNPACK SOURCE
 #=================================================
 ynh_script_progression "Upgrading source files..."
 
-# Download, check integrity, uncompress and patch the source from manifest.toml
 ynh_setup_source --dest_dir="$install_dir" --full_replace
 
 ynh_config_add --template="../sources/index.html" --destination="$install_dir/index.html"
 cp "../sources/libsignal-protocol.min.js" "$install_dir/dist/libsignal-protocol.min.js"
 
-#REMOVEME? Assuming the install dir is setup using ynh_setup_source, the proper chmod/chowns are now already applied and it shouldn't be necessary to tweak perms | chown -R $app:www-data "$install_dir"
 #=================================================
 # NGINX CONFIGURATION
 #=================================================
 ynh_script_progression "Upgrading NGINX web server configuration..."
 
-# Create a dedicated NGINX config
 ynh_config_add_nginx
 
 #=================================================
