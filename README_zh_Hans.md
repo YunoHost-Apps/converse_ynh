@@ -5,7 +5,9 @@
 
 # YunoHost 上的 Converse
 
-[![集成程度](https://dash.yunohost.org/integration/converse.svg)](https://dash.yunohost.org/appci/app/converse) ![工作状态](https://ci-apps.yunohost.org/ci/badges/converse.status.svg) ![维护状态](https://ci-apps.yunohost.org/ci/badges/converse.maintain.svg)
+[![集成程度](https://apps.yunohost.org/badge/integration/converse)](https://ci-apps.yunohost.org/ci/apps/converse/)
+![工作状态](https://apps.yunohost.org/badge/state/converse)
+![维护状态](https://apps.yunohost.org/badge/maintained/converse)
 
 [![使用 YunoHost 安装 Converse](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=converse)
 
@@ -30,7 +32,7 @@ The benefit of using converse.js as opposed to relying on a SaaS (software-as-a-
 - Passwordless login with client certificates
 
 
-**分发版本：** 10.1.7~ynh2
+**分发版本：** 10.1.8~ynh1
 
 **演示：** <https://inverse.chat/>
 ## 文档与资源
