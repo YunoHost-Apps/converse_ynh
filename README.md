@@ -5,7 +5,9 @@ It shall NOT be edited by hand.
 
 # Converse for YunoHost
 
-[![Integration level](https://dash.yunohost.org/integration/converse.svg)](https://dash.yunohost.org/appci/app/converse) ![Working status](https://ci-apps.yunohost.org/ci/badges/converse.status.svg) ![Maintenance status](https://ci-apps.yunohost.org/ci/badges/converse.maintain.svg)
+[![Integration level](https://apps.yunohost.org/badge/integration/converse)](https://ci-apps.yunohost.org/ci/apps/converse/)
+![Working status](https://apps.yunohost.org/badge/state/converse)
+![Maintenance status](https://apps.yunohost.org/badge/maintained/converse)
 
 [![Install Converse with YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=converse)
 
@@ -30,7 +32,7 @@ The benefit of using converse.js as opposed to relying on a SaaS (software-as-a-
 - Passwordless login with client certificates
 
 
-**Shipped version:** 10.1.7~ynh2
+**Shipped version:** 10.1.8~ynh1
 
 **Demo:** <https://inverse.chat/>
 ## Documentation and resources
