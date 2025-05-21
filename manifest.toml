@@ -48,8 +48,8 @@ ram.runtime = "50M"
     [resources.sources]
 
     [resources.sources.main]
-    url = "https://github.com/conversejs/converse.js/releases/download/v10.1.8/converse.js-10.1.8.tgz"
-    sha256 = "db6848ac23d6b381e1c35d79aaeefa892f5cf85460cfccb315f0565ff0b3c4d2"
+    url = "https://github.com/conversejs/converse.js/releases/download/v11.0.0/converse.js-11.0.0.tgz"
+    sha256 = "6f0cbec7fe962cd03586a611f50cfabf2b279ddec71345bc3d91d990b276d436"
 
     autoupdate.strategy = "latest_github_release"
     autoupdate.asset = "converse\\.js-\\d+(\\.\\d+)+\\.tgz"
