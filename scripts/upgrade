@@ -17,10 +17,11 @@ ynh_script_progression "Upgrading source files..."
 
 ynh_setup_source --dest_dir="$install_dir" --full_replace
 
-ynh_config_add --template="../sources/index.html" --destination="$install_dir/index.html"
-cp "../sources/libsignal-protocol.min.js" "$install_dir/dist/libsignal-protocol.min.js"
+ynh_config_add --template="index.html" --destination="$install_dir/index.html"
+ynh_config_add --template="libsignal-protocol.min.js" --destination="$install_dir/dist/libsignal-protocol.min.js"
 
-chown -R "$app:www-data" "$install_dir"
+chmod -R 750 "$install_dir"
+chown -R $app:www-data "$install_dir"
 
 #=================================================
 # NGINX CONFIGURATION
