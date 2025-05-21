@@ -5,7 +5,7 @@ name = "Converse"
 description.en = "Web-based XMPP/Jabber chat client"
 description.fr = "Client de chat XMPP/Jabber basé sur le Web"
 
-version = "10.1.8~ynh1"
+version = "11.0.0~ynh1"
 
 maintainers = []
 
@@ -17,7 +17,7 @@ admindoc = "https://conversejs.org/docs/html/index.html"
 code = "https://github.com/conversejs/converse.js"
 
 [integration]
-yunohost = ">= 11.2.30"
+yunohost = ">= 12.0.9"
 helpers_version = "2.1"
 architectures = "all"
 multi_instance = true
