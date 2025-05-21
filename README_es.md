@@ -5,7 +5,9 @@ No se debe editar a mano.
 
 # Converse para Yunohost
 
-[![Nivel de integración](https://dash.yunohost.org/integration/converse.svg)](https://dash.yunohost.org/appci/app/converse) ![Estado funcional](https://ci-apps.yunohost.org/ci/badges/converse.status.svg) ![Estado En Mantención](https://ci-apps.yunohost.org/ci/badges/converse.maintain.svg)
+[![Nivel de integración](https://apps.yunohost.org/badge/integration/converse)](https://ci-apps.yunohost.org/ci/apps/converse/)
+![Estado funcional](https://apps.yunohost.org/badge/state/converse)
+![Estado En Mantención](https://apps.yunohost.org/badge/maintained/converse)
 
 [![Instalar Converse con Yunhost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=converse)
 
@@ -30,7 +32,7 @@ The benefit of using converse.js as opposed to relying on a SaaS (software-as-a-
 - Passwordless login with client certificates
 
 
-**Versión actual:** 10.1.7~ynh2
+**Versión actual:** 10.1.8~ynh1
 
 **Demo:** <https://inverse.chat/>
 ## Documentaciones y recursos
@@ -43,7 +45,7 @@ The benefit of using converse.js as opposed to relying on a SaaS (software-as-a-
 
 ## Información para desarrolladores
 
-Por favor enviar sus correcciones a la [`branch testing`](https://github.com/YunoHost-Apps/converse_ynh/tree/testing
+Por favor enviar sus correcciones a la [rama `testing`](https://github.com/YunoHost-Apps/converse_ynh/tree/testing).
 
 Para probar la rama `testing`, sigue asÍ:
 
