@@ -5,7 +5,7 @@ name = "Converse"
 description.en = "Web-based XMPP/Jabber chat client"
 description.fr = "Client de chat XMPP/Jabber basé sur le Web"
 
-version = "11.0.1~ynh1"
+version = "12.0.0~ynh1"
 
 maintainers = []
 
@@ -48,8 +48,8 @@ ram.runtime = "50M"
     [resources.sources]
 
     [resources.sources.main]
-    url = "https://github.com/conversejs/converse.js/releases/download/v11.0.1/converse.js-11.0.1.tgz"
-    sha256 = "1881926533f47277db34e7be4ef673bd25a2fa2b1c161640f852ffa672ba002b"
+    url = "https://github.com/conversejs/converse.js/releases/download/v12.0.0/converse.js-12.0.0.tgz"
+    sha256 = "41684fcfa5f8c7a79a0b557834db5c57c016005bff66d6e002587252f3676bbb"
 
     autoupdate.strategy = "latest_github_release"
     autoupdate.asset = "converse\\.js-\\d+(\\.\\d+)+\\.tgz"
