@@ -1,64 +1,60 @@
-<!doctype html>
-<html class="no-js" lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>Converse</title>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <meta name="description" content="Converse XMPP/Jabber Chat"/>
+    <title>Converse.js</title>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Converse XMPP/Jabber Chat" />
     <meta name="author" content="JC Brand" />
     <meta name="keywords" content="xmpp chat webchat converse.js" />
-    <link rel="shortcut icon" type="image/ico" href="dist/favicon.ico"/>
-    <link rel="manifest" href="manifest.json">
-    <link type="text/css" rel="stylesheet" media="screen" href="dist/converse.min.css" />
-    <script src="dist/libsignal-protocol.min.js"></script>
-    <script src="dist/emojis.js"></script>
-    <script src="dist/icons.js"></script>
-    <script src="dist/converse.min.js"></script>
+    <link rel="manifest" href="./manifest.json">
+    <link rel="shortcut icon" type="image/ico" href="images/favicon.ico"/>
+    <link type="text/css" rel="stylesheet" media="screen" href="dist/converse.css" />
+<script type="module" src="dist/converse.js"></script>
 </head>
-<body class="converse-fullscreen">
-<noscript>You need to enable JavaScript to run the Converse.js chat app.</noscript>
-<div id="conversejs-bg"></div>
-<script>
-    /*
-    @licstart
-    This is free and unencumbered software released into the public domain.
+<body class="reset" style="background-color: var(--global-background-color)">
+<script type="module">
+    function initConverse() {
+        converse.plugins.add('converse-debug', {
+            initialize () {
+                const { _converse } = this;
+                window._converse = _converse;
+            }
+        });
 
-    Anyone is free to copy, modify, publish, use, compile, sell, or
-    distribute this software, either in source code form or as a compiled
-    binary, for any purpose, commercial or non-commercial, and by any
-    means.
+        converse.initialize({
+            auto_fill_history_gaps: false,
+            archived_messages_page_size: 2,
+            muc_subscribe_to_rai: true,
+            theme: 'dracula',
+            auto_away: 300,
+            message_limit: 300,
+            // auto_join_rooms: ['ttt@conference.chat.example.org'],
+            loglevel: 'debug',
+            // modtools_disable_assign: ['owner', 'moderator', 'participant', 'visitor'],
+            // modtools_disable_query: ['moderator', 'participant', 'visitor'],
+            // connection_options: { 'worker': '/dist/shared-connection-worker.js' },
+            // persistent_store: 'IndexedDB',
+            message_archiving: 'always',
+            // muc_domain: 'conference.chat.example.org',
+            view_mode: 'fullscreen',
+            // websocket_url: 'ws://chat.example.org:5380/xmpp-websocket',
+            // websocket_url: 'wss://chat.example.org:5381/xmpp-websocket',
+            // websocket_url: 'wss://conversejs.org/xmpp-websocket',
+            // bosh_service_url: 'http://chat.example.org:5280/http-bind',
+            allow_user_defined_connection_url: true,
+            muc_show_logs_before_join: true,
+            whitelisted_plugins: ['converse-debug'],
+            blacklisted_plugins: [],
+            show_background: true,
+        });
+    }
 
-    In jurisdictions that recognize copyright laws, the author or authors
-    of this software dedicate any and all copyright interest in the
-    software to the public domain. We make this dedication for the benefit
-    of the public at large and to the detriment of our heirs and
-    successors. We intend this dedication to be an overt act of
-    relinquishment in perpetuity of all present and future rights to this
-    software under copyright law.
-
-    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
-    EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
-    MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
-    IN NO EVENT SHALL THE AUTHORS BE LIABLE FOR ANY CLAIM, DAMAGES OR
-    OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,
-    ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
-    OTHER DEALINGS IN THE SOFTWARE.
-
-    For more information, please refer to <http://unlicense.org/>
-    @licend
-    */
-    converse.initialize({
-        authentication: 'login',
-        auto_away: 300,
-        auto_reconnect: true,
-        bosh_service_url: 'https://__DOMAIN____PATH__/http-bind',
-        default_domain: '__MAINDOMAIN__',
-        message_archiving: 'always',
-        view_mode: 'fullscreen',
-        assets_path: 'dist/',
-        play_sounds: true,
-        sounds_path: '${assets_path}/sounds/'
-    });
+    if (typeof  converse === 'undefined') {
+        window.addEventListener('converse-loaded', initConverse);
+    } else {
+        initConverse();
+    }
 </script>
-</body>
 </html>
